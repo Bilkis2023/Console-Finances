@@ -10,7 +10,7 @@ I have focused here on analyzing a Financial project of a corporate company. Her
 Since I'm going through the learning process of JavaScript, therefore I wanted to try the application of it.
 
 
-
+# Screen shot:
 
 ![A screen shot of a Website with It's console open](./assets/images/Console-Finances-1.jpg)
 
