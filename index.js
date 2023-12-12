@@ -1,5 +1,3 @@
-
-
 var finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
@@ -90,6 +88,7 @@ var finances = [
 ];
 
 
+var months =[]
 var totalMonths = finances.length;
 var totalProfit = 0;
 var totalChange = 0;
@@ -104,7 +103,7 @@ var greatest = ['', 0]
 
 for (var i = 0; i < finances.length; i++) {
   currMonth = finances[i];
-  date  = currMonth[0];
+  date  = currMonth[0]; 
   amount = currMonth[1];
   totalProfit += amount;
   if(i > 0) totalChange = amount - prvAmount;
@@ -121,11 +120,9 @@ for (var i = 0; i < finances.length; i++) {
 }
 
 average = Math.round((netChange / (finances.length - 1)) * 100) / 100;
-
-console.log(totalMonths);
-console.log(totalProfit);
-console.log(average);
-console.log(greatest);
-console.log(least);
-
-
+console.log('Financial Analysis' )
+console.log( 'Total Months',totalMonths);
+console.log('Total',totalProfit);
+console.log( 'Average Change', average);
+console.log(' Greatest Increase in Profits/Losses', greatest);
+console.log( 'Greatest Decrease in Profits/Losses', least);
